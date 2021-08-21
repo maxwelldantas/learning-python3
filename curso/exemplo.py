@@ -1,4 +1,10 @@
 # Comentário de uma linha
+"""
+Comentário de
+    mais de
+        uma
+            linha docstring (com aspas duplas)
+"""
 '''
 Comentário de
     mais de
@@ -21,27 +27,28 @@ altura = 1.80
 idade = 30
 
 # COMPLEX
-numero_complexo = 1+2j # Utilizado em estatística e engenharia elétrica
+numero_complexo = 1+2j  # Utilizado em estatística e engenharia elétrica
 
-# TIPO BOOL (Booleano)
+# TIPO BOOL (Verdadeiro ou Falso)
 possui_carro = True
 tem_filhos = False
 
+# Para verificar o tipo da variável usamos a função type
+type(nome)
+type(frase)
+type(sobrenome)
 
 # LISTAS
-#Listas tipo Array
+# Listas tipo Array
 carros = ['Camaro', 'Lamborghini', 'Ferrari']
 
 # Operações com arrays
 
-carros.append('Hilux') # Adiciona um objeto na última posição do Array
-carros.insert(0, 'Hilux') # Insere um objeto em uma posição específica do Array
+carros.append('Hilux')  # Adiciona um objeto na última posição do Array
+carros.insert(0, 'Hilux')  # Insere um objeto em uma posição específica do Array
 
 # Remove um objeto no array pelo nome
 carros.remove('Hilux')
 
 # Remove um objeto no array pela posição
 carros.pop(3)
-
-
-
