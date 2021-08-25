@@ -1,31 +1,28 @@
 # Hora de Praticar
-# App Médica Escolar
+# App Média Escolar
 
-print("Programa App Média Escolar em execução")
+print()
+print("#################################################")
+print("Bem vindo ao programa de cálculo de Média Escolar")
+print("#################################################")
+print()
 
-aluno = input("Aluno(a) digite seu nome: ")
-print(aluno)
+nome = input("Aluno(a) digite seu nome: ")
 materia = input("Aluno(a) digite o nome da matéria: ")
-print(materia)
-primeira_nota = input("Aluno(a) digite sua primeira nota: ")
-print(primeira_nota)
-segunda_nota = input("Aluno(a) digite sua segunda nota: ")
-print(segunda_nota)
-terceira_nota = input("Aluno(a) digite sua terceira nota: ")
-print(terceira_nota)
-quarta_nota = input("Aluno(a) digite sua quarta nota: ")
-print(quarta_nota)
+print("Agora você precisa informar as suas quatro notas")
+nota1 = input("Aluno(a) digite sua primeira nota: ")
+nota2 = input("Aluno(a) digite sua segunda nota: ")
+nota3 = input("Aluno(a) digite sua terceira nota: ")
+nota4 = input("Aluno(a) digite sua quarta nota: ")
 
-VAZIO = ''
+nota1 = 0 if not nota1.isdigit() else nota1
+nota2 = 0 if not nota2.isdigit() else nota2
+nota3 = 0 if not nota3.isdigit() else nota3
+nota4 = 0 if not nota4.isdigit() else nota4
 
-primeira_nota = 0 if not primeira_nota or not primeira_nota.isdigit() else primeira_nota
-segunda_nota = 0 if not segunda_nota or not segunda_nota.isdigit() else segunda_nota
-terceira_nota = 0 if not terceira_nota or not terceira_nota.isdigit() else terceira_nota
-quarta_nota = 0 if not quarta_nota or not quarta_nota.isdigit() else quarta_nota
-
-media_notas = (float(primeira_nota) + float(segunda_nota) + float(terceira_nota) + float(quarta_nota)) / 4
+media_notas = (float(nota1) + float(nota2) + float(nota3) + float(nota4)) / 4
 
 if media_notas < 7:
-    print("Aluno(a) %s, você foi REPROVADO(A). Sua média em %s foi %.2f!" % (aluno, materia, media_notas))
-elif media_notas >= 7:
-    print("PARABENS!!\nAluno(a) %s, você foi APROVADO(A). Sua média em %s foi %.2f!" % (aluno, materia, media_notas))
+    print("Aluno(a) %s, você foi REPROVADO(A). Sua média em %s foi %.2f!" % (nome, materia, media_notas))
+else:
+    print("PARABENS!!\nAluno(a) %s, você foi APROVADO(A). Sua média em %s foi %.2f!" % (nome, materia, media_notas))
