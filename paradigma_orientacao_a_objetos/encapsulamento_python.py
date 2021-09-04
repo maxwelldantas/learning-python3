@@ -13,17 +13,8 @@ class Livro:
         self.__titulo = titulo
 
 
-
 livro1 = Livro('Curso de Python', 'Alcimar Costa')
 print(livro1.autor)
 print(livro1.titulo)
 livro1.titulo = 'Novo titulo'
 print(livro1.titulo)
-
-
-
-
-
-
-
-
